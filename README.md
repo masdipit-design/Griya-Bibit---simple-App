@@ -1,10 +1,12 @@
 # Griya Bibit Sumber Sari
 
+[TUGAS ALGO BTW]
+
 Aplikasi toko bibit tanaman berbasis terminal (CLI) dengan Python dan PostgreSQL.
-Menjual bibit, benih, pupuk, dan nutrisi tanaman. Tersedia tiga peran: Admin, Pegawai Kebun, dan Pelanggan.
+jualan bibit tanaman (buah dan sayur), benih, pupuk, dan nutrisi tanaman. 3 Role utama: Admin, Pegawai Kebun, dan Pelanggan.
 
 ## Fitur
-- Pelanggan: registrasi, belanja per kategori, keranjang, checkout dengan diskon grosir (2-3%), riwayat transaksi.
+- Pelanggan: registrasi, belanja per kategori, keranjang, checkout  (ada diskon grosir (2-3%)), riwayat transaksi.
 - Pegawai kebun: catat pembibitan baru, selesaikan batch (jumlah siap jual dan mati), stok bertambah otomatis.
 - Admin: kelola produk dan akun pegawai, lihat pembibitan, laporan penjualan dan stok.
 - Checkout memakai transaksi atomik: tersimpan lengkap atau batal semua.
@@ -25,7 +27,7 @@ Menjual bibit, benih, pupuk, dan nutrisi tanaman. Tersedia tiga peran: Admin, Pe
 ## Akun contoh (data fiktif)
 | Peran | Username | Password |
 |---|---|---|
-| Admin | Dapyy@JR | 23571113 |
+| Admin | Dapyy@JR | 23571113 | (deym aku lupa passwd nya lagi)
 | Pegawai | cinta_2 | cintanihbos |
 | Pelanggan | jerom97 | mathISfun |
 
