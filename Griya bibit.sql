@@ -1,10 +1,3 @@
--- =====================================================================
--- DDL: perubahan dari versi awal agar cocok dengan data INSERT_KHUSUS_almost.xlsx
---  1. Semua kolom id dan FK: INTEGER -> VARCHAR(10) (ID berawalan: PD01, KT01, PG01, B01, TR01, K01, DT01)
---  2. batch_pembibitan.tinggi_cm: NUMERIC(5) -> NUMERIC(5,1) (ada 18.5, 15.2, 15.6)
---  3. Dilonggarkan jadi boleh NULL karena tidak ada di data/alur registrasi:
---     pengguna.nama, kategori.jenis, transaksi.metode_bayar
--- =====================================================================
 CREATE TABLE kategori (
     id_kategori VARCHAR(10) PRIMARY KEY,
     nama_kategori VARCHAR(50) UNIQUE NOT NULL,
@@ -93,10 +86,7 @@ CREATE TABLE detail_transaksi (
 
 
 -- =====================================================================
--- INSERT DATA. Tanggal bertipe tanggal dipakai apa adanya; tanggal teks bulan/tgl/tahun (m/d/yyyy) diubah ke yyyy-mm-dd.
--- id_pelanggan diisi id pengguna-nya: PL01 = PG05, PL02 = PG06, PL03 = PG07, PL04 = PG04.
--- Urutan insert mengikuti FK: kategori, pengguna, produk, batch, keranjang, transaksi, detail.
--- =====================================================================
+-- INSERT DATA
 
 INSERT INTO kategori (id_kategori, nama_kategori) VALUES
  ('KT01', 'Bibit Buah'),
